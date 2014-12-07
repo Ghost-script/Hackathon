@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<title>Modul.r</title>
+
+<head>
+	<script src="../blockly_compressed.js"></script>
+	<script src="../blocks_compressed.js"></script>
+	<script src="../msg/js/en.js"></script>
+</head>
+
+<xml id="toolbox" style="display: none">
+  <block type="controls_if"></block>
+  <block type="controls_repeat_ext"></block>
+  <block type="logic_compare"></block>
+  <block type="math_number"></block>
+  <block type="math_arithmetic"></block>
+  <block type="text"></block>
+  <block type="text_print"></block>
+</xml>
+
+<body>
+  <div id="container" style="float:left">
+    <div id="gamebox" style="height: 540px; width: 700px; position:relative; float:left;">
+        <img src="../media/tour-ipad.png"/>
+        <div id="gamepad" style="margin-top: 40px; height: 430px; width: 580px; background-color: #fff; z-index: 1000; position:absolute; top: 17px; left:63px;"></div>
+    </div>
+
+	  <div id="codebox" style="height: 540px; width: 500px; float:right"></div>
+  </div>
+</body>
+
+<script>
+      Blockly.inject(document.getElementById('codebox'),
+          {toolbox: document.getElementById('toolbox')});
+</script>
+</html>
